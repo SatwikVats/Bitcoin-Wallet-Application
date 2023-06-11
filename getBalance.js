@@ -6,7 +6,7 @@ dotenv.config();
 async function getBalance(address) {
     try {
       //const response = await axios.get(`https://api.blockcypher.com/v1/btc/main/addrs/${address}/balance?token=${process.env.API_KEY}`);
-      const response = await axios.get(`https://api.blockcypher.com/v1/btc/main/addrs/${address}/balance`, {
+      const response = await axios.get(`https://api.blockcypher.com/v1/btc/test3/addrs/${address}/balance`, {
       headers: {
         'Content-Type': 'application/json',
         'User-Agent': 'btc_wallet',

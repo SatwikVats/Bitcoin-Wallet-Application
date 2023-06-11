@@ -11,7 +11,7 @@ dotenv.config();
 
 async function getTransactions(address) {
     try {
-      const response = await axios.get(`https://api.blockcypher.com/v1/btc/main/addrs/${address}/full?token=${process.env.API_KEY}`);
+      const response = await axios.get(`https://api.blockcypher.com/v1/btc/test3/addrs/${address}/full?token=${process.env.API_KEY}`);
       const transactions = response.data.txs.map((tx) => {
         return {
           txid: tx.hash,
